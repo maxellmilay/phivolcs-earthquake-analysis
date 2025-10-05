@@ -21,7 +21,7 @@
     f. HDBSCAN
 
 `anomaly_detection.ipynb`
- - anomaly detection on earhquake occurences
+ - anomaly detection on earthquake occurences
  - experiments on the following anomaly detection algorithms:
 
     a. Isolation Forest
@@ -33,3 +33,11 @@
     d. Elleptic Envelope
 
     e. Autoencoder (Neural Network Approach)
+
+`time_series.ipynb`
+- time series analysis of the earthquake data
+- analysis on the following time series algorithms:
+
+    a. Rolling Mean and Standard Deviation & Isolation Forest for Temporal Anomaly Detection
+
+    b. ARIMA and Prophet for Forecasting Earthquake Frequency
