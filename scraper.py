@@ -2,9 +2,9 @@ from bs4 import BeautifulSoup
 import requests
 import certifi
 import sys
-import re
 from datetime import datetime
 import pandas as pd
+import os
 
 url = "https://earthquake.phivolcs.dost.gov.ph"
 
@@ -75,8 +75,9 @@ if earthquake_data:
     columns = ['datetime', 'latitude', 'longitude', 'depth', 'magnitude', 'location']
     df = df[columns]
     
-    # Save to CSV
-    csv_filename = f"earthquake_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+    # Save to CSV in data folder
+    os.makedirs("data", exist_ok=True)  # Create data folder if it doesn't exist
+    csv_filename = f"data/earthquake_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
     df.to_csv(csv_filename, index=False)
     
     print(f"\nSuccessfully saved {len(earthquake_data)} earthquake records to {csv_filename}")
@@ -85,5 +86,3 @@ if earthquake_data:
     print(df.head())
 else:
     print("No valid earthquake data found to save.")
-
-
