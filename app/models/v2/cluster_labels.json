@@ -1,0 +1,24 @@
+{
+    "clusters": {
+        "0": {
+            "label": "Anomalous",
+            "description": "Unusual seismic characteristics requiring individual review"
+        },
+        "1": {
+            "label": "Aftershock-like",
+            "description": "Events with temporal clustering characteristics"
+        },
+        "2": {
+            "label": "Elevated Activity",
+            "description": "Events during periods of heightened seismic activity"
+        },
+        "3": {
+            "label": "Background Seismicity",
+            "description": "Normal tectonic activity following Gutenberg-Richter distribution"
+        }
+    },
+    "noise": {
+        "label": "Noise",
+        "description": "Events that do not fit any cluster pattern"
+    }
+}
