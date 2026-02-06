@@ -1,6 +1,9 @@
 # Philippine Earthquake Clustering Analysis
 
-A comprehensive machine learning pipeline for analyzing and clustering Philippine earthquake data using location-agnostic features. This project includes automated data scraping, feature engineering, clustering analysis, and an interactive Streamlit web application for real-time earthquake monitoring.
+A comprehensive machine learning pipeline for analyzing and clustering Philippine earthquake data using location-agnostic features. This project includes automated data scraping, feature engineering, clustering analysis, and an interactive [Streamlit web application](https://phearthquakeclustering.streamlit.app) for real-time earthquake monitoring.
+
+![Streamlit App Interface](docs/images/app.png)
+*Interactive dashboard showing real-time earthquake clustering on a Philippine map with model configuration sidebar*
 
 ## Key Features
 
