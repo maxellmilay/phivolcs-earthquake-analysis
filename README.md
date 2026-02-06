@@ -2,9 +2,9 @@
 
 A comprehensive machine learning pipeline for analyzing and clustering Philippine earthquake data using location-agnostic features. This project includes automated data scraping, feature engineering, clustering analysis, and an interactive Streamlit web application for real-time earthquake monitoring.
 
-## 🎯 Key Features
+## Key Features
 
-### 1. **Deployed Streamlit App** 🌐
+### 1. **Deployed Streamlit App** 
 
 An interactive web application (`app/entrypoint.py`) that provides real-time earthquake cluster monitoring:
 
@@ -20,7 +20,7 @@ An interactive web application (`app/entrypoint.py`) that provides real-time ear
 streamlit run app/entrypoint.py
 ```
 
-### 2. **Automated Data Scraper** 📡
+### 2. **Automated Data Scraper** 
 
 The `scraper.py` module fetches earthquake data directly from PHIVOLCS (Philippine Institute of Volcanology and Seismology):
 
@@ -45,7 +45,7 @@ The `clustering_experiment.py` script performs extensive clustering analysis on 
 - **Dimensionality Reduction**: PCA for optimal feature selection (15 features → 10 components, 95.3% variance retained)
 - **Comprehensive Evaluation**: Silhouette Score, Calinski-Harabasz Index, Davies-Bouldin Index
 
-## 📊 Results from 100k Datapoints Experiment
+## Results from 100k Datapoints Experiment
 
 Based on the analysis of **90,042 earthquake records** (M ≥ 2.0) from `clustering_results_100k_datapoints/`:
 
@@ -145,7 +145,7 @@ The experiment generated comprehensive visualizations in `clustering_results_100
 
 5. **Robust cluster structure**: HDBSCAN's stability across all parameter combinations indicates genuine data structure, not parameter artifacts
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 earthquake-model/
@@ -174,7 +174,7 @@ earthquake-model/
 └── requirements.txt            # Python dependencies
 ```
 
-## 🚀 Installation
+## Installation
 
 1. **Clone the repository:**
 ```bash
@@ -196,7 +196,7 @@ Key dependencies:
 - `pydeck` - Interactive map visualization
 - `beautifulsoup4`, `requests` - Web scraping
 
-## 📖 Usage
+## Usage
 
 ### Running the Clustering Experiment
 
@@ -234,7 +234,7 @@ df = scrape_earthquake_data()
 df.to_csv('data/earthquake_data.csv', index=False)
 ```
 
-## 🔬 Methodology
+## Methodology
 
 ### Location-Agnostic Clustering
 
@@ -281,7 +281,7 @@ Since unsupervised learning has no ground truth labels, we used **internal valid
 - **Calinski-Harabasz Index**: Ratio of between-cluster to within-cluster variance (higher is better)
 - **Davies-Bouldin Index**: Average similarity of each cluster to most similar cluster (lower is better)
 
-## 📈 Key Insights
+## Key Insights
 
 1. **HDBSCAN is the recommended algorithm**: Achieves highest silhouette score (0.725) with minimal noise (0%), finding a clear 4-cluster structure
 
@@ -293,7 +293,7 @@ Since unsupervised learning has no ground truth labels, we used **internal valid
 
 5. **Cross-regional patterns**: Location-agnostic clustering reveals behavioral patterns that spatial clustering misses
 
-## 📝 Documentation
+## Documentation
 
 Detailed analysis documents are available in `clustering_results_100k_datapoints/`:
 
@@ -301,7 +301,7 @@ Detailed analysis documents are available in `clustering_results_100k_datapoints
 - **`CLUSTER_INTERPRETATION.md`**: Practical guide for interpreting clusters, with applications for seismologists, LGUs, and stakeholders
 - **`EVAL.md`**: Project evaluation, limitations, potential applications, and future work recommendations
 
-## 📊 Results Summary
+## Results Summary
 
 ### Computational Resources
 - **System**: 8-core CPU, 16GB RAM
@@ -315,17 +315,17 @@ Detailed analysis documents are available in `clustering_results_100k_datapoints
 - **Cluster Quality**: Excellent (Silhouette: 0.725)
 - **Parameter Stability**: Exceptional (identical results across all tested parameters)
 
-## 📝 References
+## References
 
 - **Data Source**: [PHIVOLCS](https://earthquake.phivolcs.dost.gov.ph/) - Philippine Institute of Volcanology and Seismology
 - **Clustering Algorithms**: HDBSCAN, DBSCAN, K-Means via scikit-learn
 - **Analysis Results**: See `clustering_results_100k_datapoints/ANALYSIS.md`, `CLUSTER_INTERPRETATION.md`, and `EVAL.md` for detailed findings
 
-## 👤 Author
+## Author
 
 Maxell Milay
 
-## 📄 License
+## License
 
 [Add your license here]
 
